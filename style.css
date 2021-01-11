@@ -27,6 +27,11 @@ p {
     font-size: 20px;
 }
 
+img {
+    border: 1px solid rgb(48, 46, 46, 0.5);
+    border-radius: 10px;
+}
+
 /* created a class no-bullets to remove the bullets from the navbar list items and display them inline */
 .no-bullets {
     display: inline;
