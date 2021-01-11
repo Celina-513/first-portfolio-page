@@ -40,6 +40,11 @@ img {
     font-size: 20px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 ol li {
     list-style-position: inside;
     font-size: 20px;
