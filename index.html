@@ -3,48 +3,59 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Celina's Portfolio Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>Celina Driscoll</h1>
             <h2>Web Developer</h2>
-            <nav>
-                <a href="">Intro</a>
-                <a href="">About Me</a>
-                <a href="">Contact Me</a>
+            <nav class="main-navbar">
+                <ul>
+                    <li class="no-bullets"><a href="#intro">Intro</a></li>
+                    <li class="no-bullets"><a href="#about">About Me</a></li>
+                    <li class="no-bullets"><a href="#contact">Contact Me</a></li>
+                </ul>
             </nav>
         </header>
 
         <main>
             <article>
-                <section>
+                <img src="me.jpg" width="300px" alt="photo of smiling girl with curly hair">
+                <section id="intro">
                     <header>
                         <h3>Hi, I'm Celina!</h3>
                     </header>
                     <p>I am a Web Developer based in Los Angeles, CA.</p>
                 </section>
-                <section>
-                    <header>
-                        <h3>About Me</h3>
-                    </header>
-                    <p>I am excited to help you bring your vision to life! I will work with you on any project - big or small - 
-                        until we have a finshed product that is both beautiful and useful.
-                    </p>
-                    <p>When I'm not busy helping my clients grow their business, you can find me at the gym,
-                        hanging out with my dog, or hopping on a flight in search of some new adventure!
-                    </p>
+                <hr>
+                <section id="about">
+                        <header>
+                            <h3>About Me</h3>
+                        </header>
+                        <p>I am excited to help you bring your vision to life! I will work with you on any project, big or small, 
+                            until we have a finshed product that is both beautiful and useful.
+                        </p>
+                        <p>When I'm not busy helping my clients grow their business, you can find me:</p>
+                        <ol>
+                            <li>At the gym</li>
+                            <li>Hanging out with my dog</li>
+                            <li>Hopping on a flight in search of new adventure!</li>
+                        </ol>
                 </section>
-                <section>
+                <hr>
+                <section id="contact">
                     <header>
                         <h3>Contact Me</h3>
                     </header>
                     <p>You can contact me through these links:</p>
-                    <a href="">LinkedIn</a>
-                    <a href="">GitHub</a>
+                    <a href="https://www.linkedin.com/">LinkedIn</a>
+                    <a href="https://github.com/Celina-513">GitHub</a>
                 </section>
             </article>
 
@@ -54,6 +65,5 @@
             <h4>Est. 2021</h4>
         </footer>
         
-        <script src="" async defer></script>
     </body>
 </html>
