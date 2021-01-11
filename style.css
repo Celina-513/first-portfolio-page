@@ -14,6 +14,7 @@ h1 {
     padding-top: 10px;
 }
 
+/* gave the h2 a negative top margin to bring it closer to the h1 */
 h2 {
     font-size: 30px;
     margin-top: -30px;
@@ -27,6 +28,7 @@ p {
     font-size: 20px;
 }
 
+/* created a border to give the image slightly rounded corners */
 img {
     border: 1px solid rgb(48, 46, 46, 0.5);
     border-radius: 10px;
@@ -40,11 +42,13 @@ img {
     font-size: 20px;
 }
 
+/* got rid of the automatic padding and margin that comes on lists so that the list could be completely centered */
 ul {
     margin: 0;
     padding: 0;
 }
 
+/* list items that belong to an ordered list will have the numbers inside the container */
 ol li {
     list-style-position: inside;
     font-size: 20px;
