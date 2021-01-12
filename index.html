@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!--added the lang to the html tag as suggested by the W3 validator-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,44 +28,47 @@
         </header>
 
         <main>
-            <article>
+            <div class="wrapper">
                 <img src="me.jpg" width="300" alt="photo of smiling girl with curly hair">
-                <!-- broke the article container into 3 sections - the intro section just introduces me and where I'm from -->
-                <section id="intro">
+                <!-- removed the article container and instead separated sections into 3 divs -->
+                <div id="intro">
                     <header>
                         <h3>Hi, I'm Celina!</h3>
                     </header>
+                    <!-- updated the intro section to be more detailed -->
                     <p>I am a Web Developer based in Los Angeles, CA.</p>
+                    <p>My web development journey began in 2020. As a lover of learning in general, I was eager to meet the challenges of learning web development head on.</p>
+                    <p>The curriculum at <a class="thinkful" href="https://www.thinkful.com/" target="_blank">Thinkful</a> has provided me with all the tools to be successful in my journey!</p>
                 <!-- about section gives more info about me, both professionally and personally -->
-                </section>
+                </div>
                 <hr>
-                <section id="about">
-                        <header>
-                            <h3>About Me</h3>
-                        </header>
-                        <p>I became a web developer to join my love of all things aesthetically pleasing, and my desire to make those same things simple and easy to use.</p>
-                        <p>I am excited to help you bring your vision to life! I will work with you on any project, big or small, 
-                            until we have a finshed product that is both beautiful and useful.
-                        </p>
-                        <p>When I'm not busy helping my clients grow their business, you can find me:</p>
-                        <ol>
-                            <li>At the gym</li>
-                            <li>Hanging out with my dog</li>
-                            <li>Hopping on a flight in search of new adventure!</li>
-                        </ol>
+                <div id="about">
+                    <header>
+                        <h3>About Me</h3>
+                    </header>
+                    <p>I became a web developer to join my love of all things aesthetically pleasing, and my desire to make those same things simple and easy to use.</p>
+                    <p>I am excited to help you bring your vision to life! I will work with you on any project, big or small, 
+                        until we have a finshed product that is both beautiful and useful.
+                    </p>
+                    <p>When I'm not busy helping my clients grow their business, you can find me:</p>
+                    <ol>
+                        <li>At the gym</li>
+                        <li>Hanging out with my dog</li>
+                        <li>Hopping on a flight in search of new adventure!</li>
+                    </ol>
                 <!-- the contact section contains links to other sites where I have a profile -->
-                </section>
+                </div>
                 <hr>
-                <section id="contact">
+                <div id="contact">
                     <header>
                         <h3>Contact Me</h3>
                     </header>
                     <p>You can contact me through these links:</p>
                     <!-- the links open in a new tab -->
-                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/Celina-513" target="_blank">GitHub</a>
-                </section>
-            </article>
+                    <a class="contact-link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                    <a class="contact-link" href="https://github.com/Celina-513" target="_blank">GitHub</a>
+                </div>
+            </div>
         </main>
 
         <footer>

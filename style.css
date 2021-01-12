@@ -1,3 +1,12 @@
+/* 
+used this color palette from coolors.co to make the CSS more cohesive and more readable:
+$dark-olive-green: rgba(96, 108, 56, 1);
+$kombu-green: rgba(40, 54, 24, 1);
+$cornsilk: rgba(254, 250, 224, 1);
+$fawn: rgba(221, 161, 94, 1);
+$liver-dogs: rgba(188, 108, 37, 1);
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -5,27 +14,32 @@
 body {
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
-    color: rgb(37, 37, 37);
+    color: rgb(40, 54, 24);
 }
 
 h1 {
     font-family: 'Sacramento', cursive;
-    font-size: 50px;
-    padding-top: 10px;
+    font-size: 60px;
 }
 
-/* gave the h2 a negative top margin to bring it closer to the h1 */
+/* gave the h2 a negative top margin to bring it closer to the h1 and a bottom margin to push the navbar links down a bit */
 h2 {
-    font-size: 30px;
-    margin-top: -30px;
+    font-size: 40px;
+    margin-top: -40px;
+    margin-bottom: 50px;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 28px;
+}
+
+/* added some padding around the main section */
+.wrapper {
+    padding: 60px;
 }
 
 /* created a border to give the image slightly rounded corners */
@@ -39,7 +53,7 @@ img {
     display: inline;
     list-style: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 /* got rid of the automatic padding and margin that comes on lists so that the list could be completely centered */
@@ -51,58 +65,55 @@ ul {
 /* list items that belong to an ordered list will have the numbers inside the container */
 ol li {
     list-style-position: inside;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 main {
-    background-color: indianred;
-}
-
-/* gives some space around the article container */
-article {
-    padding: 50px;
+    background-color: rgb(221, 161, 94);
 }
 
 a:visited, a:link {
-    color: goldenrod;
+    color: rgb(254, 250, 224);
 }
 
 a:hover {
-    color: darkolivegreen;
+    color: rgb(188, 108, 37);
 }
 
-/* this is only for the anchor tags that are inside a section tag */
-section a {
-    font-size: 20px;
-    background-color: lightcoral;
+/* this is for the anchor tags that are under the contact-link class */
+.contact-link {
+    font-size: 28px;
+    background-color: rgb(254, 250, 224);
     padding: 5px;
-    border: 1px solid lightcoral;
+    border: 1px solid rgb(254, 250, 224);
     border-radius: 12px;
 }
 
-/* this is only for the anchor tags that are inside a section tag */
-section a:visited, section a:link {
-    color: darkolivegreen;
+/* this is only for the anchor tags that are under the contact-link class */
+.contact-link:visited, .contact-link:link {
+    color: rgb(40, 54, 24);
 }
 
 /* this is only for the headers that are direct children of the body */
 body > header {
-    background-color: grey;
+    background-color: rgb(96, 108, 56);
     padding: 30px;
-    height: 250px;
-    border-bottom: 3px solid rgb(48, 46, 46, 0.5);
+    height: 300px;
+    border-bottom: 3px solid rgb(40, 54, 24, 0.5);
 }
 
 /* this is only for the footers that are direct children of the body */
 body > footer {
-    background-color: grey;
+    color: rgb(254, 250, 224);
+    background-color: rgb(96, 108, 56);
     padding: 10px;
-    border-top: 3px solid rgb(48, 46, 46, 0.5);
-    font-size: 18px;
+    border-top: 3px solid rgb(40, 54, 24, 0.5);
+    font-size: 22px;
 }
 
 hr {
     width: 750px;
 }
+
 
 
