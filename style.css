@@ -11,30 +11,69 @@ $liver-dogs: rgba(188, 108, 37, 1);
     box-sizing: border-box;
 }
 
+
+
 body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(254, 250, 224);
+    color: rgb(40, 54, 24);
+    font-size: 22px;
+    margin: 0 auto; /*allows the header and footer to go all the way to the edge of the page*/
+}
+
+header {
+    background-color: rgb(96, 108, 56, 0.85);
+    margin-bottom: 40px;
+    border-bottom: 3px solid rgb(40, 54, 24, 0.5);
+}
+
+header h1 {
+    font-family: 'Homemade Apple', cursive;
     text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+/* in mobile view the nav bar will be centered */
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0; /*this removes the automatic padding that comes with lists*/
+    list-style: none; /*removes the bullets*/
+}
+
+header nav ul li a {
+    color: rgb(254, 250, 224); /*sets nav link color*/
+    text-decoration: none;
+    margin-right: 20px; /*adds visual space between each anchor tag*/
+}
+
+header nav ul li a:hover {
     color: rgb(40, 54, 24);
 }
 
-h1 {
-    font-family: 'Sacramento', cursive;
-    font-size: 60px;
+header nav ul li:last-child a {
+    margin-right: 0;
 }
 
-/* gave the h2 a negative top margin to bring it closer to the h1 and a bottom margin to push the navbar links down a bit */
+/* in mobile view the h2s will be centered */
 h2 {
-    font-size: 40px;
-    margin-top: -40px;
-    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: center;
 }
 
 h3 {
-    font-size: 35px;
+    font-size: 25px;
 }
 
-p {
-    font-size: 28px;
+/* in mobile view the info, about, and portfolio sections will be centered */
+#info, #about, #portfolio {
+    text-align: center;
 }
 
 /* added some padding around the main section */
@@ -42,77 +81,109 @@ p {
     padding: 60px;
 }
 
+/* flex display for each section */
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+}
+
+.item-triple {
+    flex: 3;
+}
+
 /* created a border to give the image slightly rounded corners */
 img {
+    width: 100%;
     border: 1px solid rgb(48, 46, 46, 0.5);
     border-radius: 10px;
 }
 
-/* created a class no-bullets to remove the bullets from the navbar list items and display them inline */
-.no-bullets {
-    display: inline;
-    list-style: none;
-    padding: 10px;
-    font-size: 28px;
+/* styled the portfolio project links separately */
+.project {
+    font-size: 16px;
+    text-decoration: none;
 }
 
-/* got rid of the automatic padding and margin that comes on lists so that the list could be completely centered */
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* list items that belong to an ordered list will have the numbers inside the container */
-ol li {
-    list-style-position: inside;
-    font-size: 28px;
-}
-
-main {
-    background-color: rgb(221, 161, 94);
-}
-
-a:visited, a:link {
-    color: rgb(254, 250, 224);
-}
-
-a:hover {
-    color: rgb(188, 108, 37);
-}
-
-/* this is for the anchor tags that are under the contact-link class */
-.contact-link {
-    font-size: 28px;
-    background-color: rgb(254, 250, 224);
-    padding: 5px;
-    border: 1px solid rgb(254, 250, 224);
-    border-radius: 12px;
-}
-
-/* this is only for the anchor tags that are under the contact-link class */
-.contact-link:visited, .contact-link:link {
+section a:visited, section a:link {
     color: rgb(40, 54, 24);
 }
 
-/* this is only for the headers that are direct children of the body */
-body > header {
-    background-color: rgb(96, 108, 56);
-    padding: 30px;
-    height: 300px;
-    border-bottom: 3px solid rgb(40, 54, 24, 0.5);
+section a:hover {
+    color: rgb(188, 108, 37);
 }
 
-/* this is only for the footers that are direct children of the body */
-body > footer {
+/* form labels display on top of the field */
+form label {
+    display: block;
+}
+
+/* form field takes up the full width of the container */
+form input[type="text"], form input[type="email"] {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+form textarea {
+    height: 100px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+/* styling for the submit and reset buttons */
+form button {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 13px;
+    background-color: rgb(40, 54, 24);
     color: rgb(254, 250, 224);
-    background-color: rgb(96, 108, 56);
+    margin: 10px 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    color: rgb(254, 250, 224);
+    background-color: rgb(96, 108, 56, 0.85);
     padding: 10px;
     border-top: 3px solid rgb(40, 54, 24, 0.5);
     font-size: 22px;
 }
 
 hr {
-    width: 750px;
+    width: 70%;
+}
+
+/* some CSS changes for destop view -- header is spread horizontally, nav bar is centered in the container, 
+flex direction is changed to row, and the h2s and sections are aligned to the left */
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    header h1 {
+        margin: 14px;
+    }
+    header nav {
+        align-items: center;
+    }
+    .group {
+        flex-direction: row;
+    }
+    h2, #info, #about, #portfolio {
+        text-align: left;
+    }
 }
 
 

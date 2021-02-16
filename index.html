@@ -10,69 +10,130 @@
         <link rel="stylesheet" href="style.css">
         <!-- the 3 links below are for my external fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>Celina Driscoll</h1>
-            <h2>Web Developer</h2>
             <!-- my navbar items link to their respective section on the page -->
             <nav>
                 <ul>
-                    <li class="no-bullets"><a href="#intro">Intro</a></li>
-                    <li class="no-bullets"><a href="#about">About Me</a></li>
-                    <li class="no-bullets"><a href="#contact">Contact Me</a></li>
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <div class="wrapper">
-                <img src="me.jpg" width="300" alt="photo of smiling girl with curly hair">
-                <!-- removed the article container and instead separated sections into 3 divs -->
-                <div id="intro">
-                    <header>
-                        <h3>Hi, I'm Celina!</h3>
-                    </header>
-                    <!-- updated the intro section to be more detailed -->
-                    <p>I am a Web Developer based in Los Angeles, CA.</p>
-                    <p>My web development journey began in 2020. As a lover of learning in general, I was eager to meet the challenges of learning web development head on.</p>
-                    <p>The curriculum at <a class="thinkful" href="https://www.thinkful.com/" target="_blank">Thinkful</a> has provided me with all the tools to be successful in my journey!</p>
-                <!-- about section gives more info about me, both professionally and personally -->
-                </div>
-                <hr>
-                <div id="about">
-                    <header>
-                        <h3>About Me</h3>
-                    </header>
-                    <p>I became a web developer to join my love of all things aesthetically pleasing, and my desire to make those same things simple and easy to use.</p>
-                    <p>I am excited to help you bring your vision to life! I will work with you on any project, big or small, 
-                        until we have a finshed product that is both beautiful and useful.
-                    </p>
-                    <p>When I'm not busy helping my clients grow their business, you can find me:</p>
-                    <ol>
-                        <li>At the gym</li>
-                        <li>Hanging out with my dog</li>
-                        <li>Hopping on a flight in search of new adventure!</li>
-                    </ol>
-                <!-- the contact section contains links to other sites where I have a profile -->
-                </div>
-                <hr>
-                <div id="contact">
-                    <header>
-                        <h3>Contact Me</h3>
-                    </header>
-                    <p>You can contact me through these links:</p>
-                    <!-- the links open in a new tab -->
-                    <a class="contact-link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                    <a class="contact-link" href="https://github.com/Celina-513" target="_blank">GitHub</a>
-                </div>
+                <!-- divided the main content into 4 sections -->
+                <section id="intro">  
+                    <!-- created groups inside each section to be able to add flexbox layout styling   -->
+                    <div class="group">
+                        <div class="item">
+                            <img src="me.jpg" width="300" alt="photo of smiling girl with curly hair">
+                        </div>
+                        <div class="item item-double">
+                            <h2>Hi, I'm Celina!</h2>
+                            <p>I am a Web Developer based in Los Angeles, CA.</p>
+                            <p>My web development journey began in 2020. At a time when I, as many others, felt a bit lost, I decided to finally tackle the challenge of learning web development.
+                                A combination of hard work and the wonderful curriculum and support from <a href="https://www.thinkful.com/" target="_blank">Thinkful</a> has prepared me 
+                                to hit the ground running in this exciting industry!
+                            </p>
+                            <p>I can't wait to meet you!</p>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                
+                <section id="about">
+                    <div class="group">
+                        <div class="item item-triple">
+                            <h2>About Me</h2>
+                            <p>I became a web developer to join my love of aesthetics with my love for problem solving, organization and order.</p>
+                            <p>I am excited to help you bring your vision to life! I will work with you on any project, big or small, 
+                                until we have a finshed product that is both beautiful and useful.
+                            </p>
+                            <p>When I'm not busy helping my clients grow their business, you can find me hanging out with my dog Theo,
+                                in the gym, or hopping on a plane in search of a new adventure!
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="theo.jpg" width="200" alt="girl taking selfie with french bulldog">
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                
+                <section id="portfolio">
+                    <h2>Portfolio</h2>
+                    <div class="group">
+                        <div class="item">
+                            <img src="soon2.jpg" width="300" alt="photo with text that says coming soon">
+                            <h3>Local Library Project</h3>
+                            <p>This local library project was designed as a system for a neighborhood where people can lend and borrow books. 
+                                My goal in this project was to build the functionality for the site. I used JavaScript. The HTML and CSS were
+                                written by another developer. This project taught me a lot about dealing with large data sets.</p>
+                            <p>
+                                <a class="project" href="https://github.com/Celina-513/local-library" target="_blank">GitHub Repository</a><br>
+                                <a class="project" href=" https://celina-513.github.io/local-library/" target="_blank">celina-513.github.io/local-library/</a>
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="soon2.jpg" width="300" alt="photo with text that says coming soon">
+                            <h3>Flashcard App</h3>
+                            <p>This is a description of the flashcard app I will be building. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+                            <p>
+                                <a class="project" href="https://github.com/Celina-513" target="_blank">GitHub Repository</a><br>
+                                <a class="project" href="https://example.com" target="_blank">Example.com</a>
+                            </p> 
+                        </div>
+                        <div class="item">
+                            <img src="soon2.jpg" width="300" alt="photo with text that says coming soon">
+                            <h3>Capstone Project</h3>
+                            <p>This is a description of the capstone project I will complete. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+                            <p>
+                                <a class="project" href="https://github.com/Celina-513" target="_blank">GitHub Repository</a><br>
+                                <a class="project" href="https://example.com" target="_blank">Example.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                </section>  
+
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <div class="group">
+                        <div class="item">
+                            <p>You can contact me through these links, or use the contact form to get in touch!</p>
+                        <!-- the email link opens in the mail app, and the other links open in a new tab -->
+                        <p>Email: <a  href="mailto:driscoll.celina@gmail.com?subject=You%20are%20hired!!">driscoll.celina@gmail.com</a></p>
+                        <a  href="https://www.linkedin.com/in/celina-driscoll-839776206" target="_blank">LinkedIn</a><br><br>
+                        <a  href="https://github.com/Celina-513" target="_blank">GitHub</a>
+                    </div>
+                    <div class="item item-double">
+                        <form action="https://formspree.io/f/xwkwjoro" method="post">
+                            <label for="client-name">Name:</label>
+                            <input id="client-name" type="text" name="name"/>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email"/>
+                            <label for="form-message">Your Message:</label>
+                            <textarea id="form-message" name="message"></textarea>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </form>
+                    </div>
+                        </div>
+                        
+                </section>  
             </div>
         </main>
 
         <footer>
-            <h4>Est. 2021</h4>
+            <h3>Est. 2021</h3>
         </footer>
         
     </body>
