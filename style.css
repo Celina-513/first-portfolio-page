@@ -181,7 +181,7 @@ flex direction is changed to row, and the h2s and sections are aligned to the le
     .group {
         flex-direction: row;
     }
-    h2, #info, #about, #portfolio {
+    h2, #intro, #about, #portfolio {
         text-align: left;
     }
 }
