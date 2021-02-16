@@ -1,2 +1,5 @@
 # first-portfolio-page
-First attempt at a single portfolio page
+Portfolio page containing:
+-About me info
+-Portfolio projects
+-Contact info
