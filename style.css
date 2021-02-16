@@ -72,7 +72,7 @@ h3 {
 }
 
 /* in mobile view the info, about, and portfolio sections will be centered */
-#info, #about, #portfolio {
+#intro, #about, #portfolio {
     text-align: center;
 }
 
